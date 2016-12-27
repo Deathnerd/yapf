@@ -1,0 +1,27 @@
+{
+    "name": "deathnerd/yapf",
+    "description": "Yet another PHP Framework",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wes Gilleland",
+            "email": "wes.gilleland@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "YAPF\\": "YAPF"
+        },
+        "files": [
+            "YAPF/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "Tests"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {}
+}
