@@ -1,0 +1,28 @@
+<?php
+
+abstract class Response {
+	/**
+	 * @var ResponseContent
+	 */
+	protected $content;
+	/**
+	 * @var Closure[]
+	 */
+	protected $cleanup = [];
+
+
+	public function send() {
+		if($this->headers){
+			foreach($this->headers as $header){
+				header($header);
+			}
+		}
+		$content = $content->generate();
+
+		$this->cleanup();
+	}
+
+	private function cleanup() {
+		
+	}
+}
